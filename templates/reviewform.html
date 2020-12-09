@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trần Tấn Thành - 17101691</title>
+  </head>
+  <body>
+    <div style="border-radius: 10px 10px 10px 10px;color: darkblue;background-color: lightblue;text-align: center;margin-top: 10px;margin-left: 2%;margin-right: 2%;width: 96%;float: left;">
+      <h2 >Please enter a sentence that shows your current feelings!</h2>
+    </div>    
+
+      {% from "_formhelpers.html" import render_field %}
+
+    <form method=post action="/results" style="border-radius: 10px 10px 10px 10px;color: white;background-color: lightblue;text-align: center;margin-top: 10px;margin-left: 2%;padding-bottom: 20px;margin-right: 2%;width: 96%;float: left;">
+      <dl style="text-align: center; font-size: 20px;">
+        {{ render_field(form.moviereview, cols='150', rows='10') }}
+      </dl>
+      <div>
+        <input type=submit value='Submit sentence' name='submit_btn' style="border-radius: 5px 5px 5px 5px; width: 200px;height: 30px;text-align: center;font-size: 18px;background-color: green;color: yellow;">
+      </div>
+    </form>
+    <div style="border-radius: 10px 10px 10px 10px;color: darkblue;background-color: lightblue;text-align: center;margin-top: 10px;margin-left: 2%;margin-right: 2%;width: 96%;float: left;">
+      <h1 style="text-align: center;">Trần Tấn Thành - 17101691</h1>
+    </div>
+  </body>
+</html>

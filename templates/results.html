@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Trần Tấn Thành - 17101691</title>
+	</head>
+<body>
+	<div style="border-radius: 10px 10px 10px 10px;color: darkblue;background-color: lightblue;text-align: center;margin-top: 10px;margin-left: 2%;margin-right: 2%;width: 96%;float: left;">
+		<h3 style="padding-left: 100px; text-align: left;">Your current feelings:</h3>		
+		<div style="padding-left: 200px; text-align: left;font-size: 20px; color: black;">{{ content }}</div>
+		<h3 style="padding-left: 100px; text-align: left;">Prediction:</h3>
+		<div style="padding-left: 200px; text-align: left;font-size: 20px; color: black;">
+			Your current feelings is <strong style="color:rgb(192, 19, 19);">{{ prediction }}</strong> ( probability: <b style="color: rgb(192, 19, 19);">{{ probability }}</b> %).
+		</div>
+		<div id='button' style="padding-top: 20px;">
+		<form action="/thanks" method="post">
+			<input type=submit value='Correct' name='feedback_button' style="border-radius: 5px 5px 5px 5px; width: 200px;height: 30px;text-align: center;font-size: 18px;background-color: white;color: lightgreen;font-weight: bold">
+			<input type=submit value='Incorrect' name='feedback_button' style="border-radius: 5px 5px 5px 5px; width: 200px;height: 30px;text-align: center;font-size: 18px;background-color: white;color: red;font-weight: bold">
+			<input type=hidden value='{{ prediction }}' name='prediction'>
+			<input type=hidden value='{{ content }}' name='review'>
+		</form>
+		</div>
+		<div id='button' style="padding-top: 20px;padding-bottom: 20px;">
+		<form action="/">
+			<input type=submit value='Submit another sentence' style="border-radius: 5px 5px 5px 5px; width: 200px;height: 30px;text-align: center;font-size: 18px;background-color: green;color: yellow;">
+		</form>
+		</div>
+	</div>
+		<div style="border-radius: 10px 10px 10px 10px;color: darkblue;background-color: lightblue;text-align: center;margin-top: 10px;margin-left: 2%;margin-right: 2%;width: 96%;float: left;">
+			<h1 style="text-align: center;">Trần Tấn Thành - 17101691</h1>
+		</div>
+	</body>
+</html>
